@@ -9,10 +9,10 @@ In this lab we are using IBM Waston [Personality Insights][documentation] servic
 2. Download and install the [Nodejs][Node-js].
 
 3. Create your twitter application and save your Keys, and update the .env file.
-![twitt](url)
+![twitt](http://url/twitter.gif)
 
 4. Create Personality insight service and copy your credentials and place them the .env file.
-![bluemix](url)
+![bluemix](http://url/bluemix.gif)
 
 
 ## How to run
