@@ -18,16 +18,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // define personality insights
 var personality_insights = watson.personality_insights({
-  username: 'd565b330-6af7-4591-8e96-e0c8add65efc',
-  password: 'yUsnYzCfAU86',
+  username: 'Your username',
+  password: 'Your password',
   version_date:'2016-10-19',
   version: 'v3'
 });
 
 // define twitter helper
 var Twithelper = new Twit({
-  consumer_key: 'b7K2VRtlEJ2CBTZOF60PgJPlM', // Insert your Twitter key here
-  consumer_secret: 'DO4Z4LjJUd9CEcLivKDf4wG0N8vafEx4ZxLCuVCjMJ0tuyAJGQ',
+  consumer_key: 'Your key',
+  consumer_secret: 'Your secret',
   app_only_auth: true
 })
 
@@ -86,9 +86,9 @@ app.post('/search', function(req, res){
 
         if (category_id.indexOf('shopping')!=-1){
 
-          for(var j=0;j<category.consumption_preferences.length;j++){
+          for(var j=2;j<6;j++){
             var preference = category.consumption_preferences[j];
-            if (j>=2 && j<=5 && preference.score=='1'){
+            if (preference.score=='1'){
               titles.push(clothesTitles[j-2]); subtitles.push(preference.name);
               prices.push(clothesPrices[j-2]); images.push('/images/c'+(j-2)+'.jpg');
              }
@@ -96,9 +96,9 @@ app.post('/search', function(req, res){
 
         } else if (category_id.indexOf('reading')!=-1) {
 
-          for(var j=0;j<category.consumption_preferences.length;j++){
+          for(var j=1;j<category.consumption_preferences.length;j++){
             var preference = category.consumption_preferences[j];
-            if (j>0 && preference.score=='1'){
+            if (preference.score=='1'){
                 titles.push(booksTitles[j-1]); subtitles.push(preference.name.split(' ').splice(-2).join(' ').slice(0,-1));
                 prices.push(booksPrices[j-1]); images.push('/images/b'+(j-1)+'.jpg');
             }
