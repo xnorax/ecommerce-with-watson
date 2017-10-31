@@ -33,14 +33,14 @@ The setup is done in 3 primary steps.  You will download the code, setup the app
 
 1. [Clone the repo](#1-clone-the-repo)
 2. [Twitter Requirements](#2-twitter-requirements)
-3. [Create Watson Personality Insights service with IBM Cloud](#3-create-watson-personaliry-insights-service-with-ibm-cloud)
+3. [Create Watson Personality Insights service with Bluemix](#3-create-watson-personality-insights-service-with-Bluemix)
 4. [Run the application](#4-run-the-application)
 
 ### 1. Clone the repo
 
 Click `Clone or download` button. Then, `Download ZIP`
 
-![Gifty](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/clone.PNG)
+![Clone](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/clone.png)
 
 ### 2. Twitter requirements
 
@@ -57,8 +57,9 @@ The Twitter account will be used as the account that gets the tweets from other 
   app_only_auth: true
 })`
 
+![Twitter app](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/twitter.gif)
 
-### 3. Create Watson Personality Insights service with IBM Cloud
+### 3. Create Watson Personality Insights service with Bluemix
 
 1. If you do not already have a Bluemix account, [sign up for Bluemix](https://ibm.biz/clouddaypsu).
 2. Download and install the [Cloud Foundry CLI](https://console.bluemix.net/docs/cli/index.html#cli) tool.
@@ -77,6 +78,8 @@ The Twitter account will be used as the account that gets the tweets from other 
   version_date:'2016-10-19',
   version: 'v3'
 });`
+
+![Watson service](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/bluemix.gif)
 
 ### 4. Run the application
 
