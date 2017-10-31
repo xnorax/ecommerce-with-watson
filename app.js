@@ -1,4 +1,5 @@
 
+// define required packages
 const watson = require('watson-developer-cloud'),
 Twit = require('twit'),
 express = require('express'),
