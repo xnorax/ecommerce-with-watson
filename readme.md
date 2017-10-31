@@ -50,12 +50,13 @@ The Twitter account will be used as the account that gets the tweets from other 
 * Once you have the Twitter account created and verified, log in to [Twitter Dev](https://apps.twitter.com/) and create an application.  
 * Select the Keys and Access Tokens tab and copy your `API Key` and `API Secret`.
 * In `app.js` file, paste your keys to `consumer_key` and `consumer_secret`:
-
-`var Twithelper = new Twit({
+```
+var Twithelper = new Twit({
   consumer_key: 'Your key',
   consumer_secret: 'Your secret',
   app_only_auth: true
-})`
+})
+```
 
 ![Twitter app](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/twitter.gif)
 
@@ -72,12 +73,14 @@ The Twitter account will be used as the account that gets the tweets from other 
 5. Once the application is created, go into the application and select `Service credentials`.
 6. Click `View credentials` to copy your username and password into the code in `app.js`:
 
-`var personality_insights = watson.personality_insights({
+```
+var personality_insights = watson.personality_insights({
   username: 'Your username',
   password: 'Your password',
   version_date:'2016-10-19',
   version: 'v3'
-});`
+});
+```
 
 ![Watson service](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/bluemix.gif)
 
