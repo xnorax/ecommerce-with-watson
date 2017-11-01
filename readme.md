@@ -29,17 +29,17 @@ When the reader has completed this journey, they will understand how to:
 
 # Steps
 
-The setup is done in 3 primary steps.  You will download the code, setup the application and then deploy the code to Bluemix.
+The setup is done in 3 primary steps.  You will download the code, setup the application and then deploy the code to IBM Clou.
 
 1. [Sign up on IBM Cloud](#1-sign-up-on-ibm-cloud)
 2. [Clone the repo](#2-clone-the-repo)
 3. [Twitter Requirements](#3-twitter-requirements)
-4. [Create Watson Personality Insights service with Bluemix](#4-create-watson-personality-insights-service-with-Bluemix)
+4. [Create Watson Personality Insights service with IBM Clou](#4-create-watson-personality-insights-service-with-Bluemix)
 5. [Run the application](#5-run-the-application)
 
 ### 1. Sign up on IBM Cloud
 
-If you do not already have a Bluemix account, [sign up for IBM Cloud](https://ibm.biz/clouddaypsu).
+If you do not already have a IBM Cloud account, [sign up for IBM Cloud](https://ibm.biz/clouddaypsu).
 
 ### 2. Clone the repo
 
@@ -65,10 +65,10 @@ var Twithelper = new Twit({
 
 ![Twitter app](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/twitter.gif)
 
-### 4. Create Watson Personality Insights service with Bluemix
+### 4. Create Watson Personality Insights service with IBM Cloud
 
 1. Download and install the [Cloud Foundry CLI](https://console.bluemix.net/docs/cli/index.html#cli) tool.
-2. Log into Bluemix with your account.
+2. Log into IBM Cloud with your account.
 3. Create `Personality Insights` service.
   - From the top bar menu, click `Catalog`.
   - On the left menu, select `Watson`.
@@ -86,23 +86,23 @@ var personality_insights = watson.personality_insights({
 });
 ```
 
-![Watson service](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/bluemix.gif)
+![Watson service](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/IBM Cloud.gif)
 
 ### 5. Run the application
 
 1. Open the `manifest.yml` file and change the `name` AND `host` value to a unique application name.
 
-2. Connect to Bluemix in the command line tool and follow the prompts to log in
+2. Connect to IBM Cloud in the command line tool and follow the prompts to log in
 
   ```
-  cf login -a https://api.ng.bluemix.net
+  cf login -a https://api.ng.IBM Cloud.net
   ```
-3. Push the app to Bluemix.
+3. Push the app to IBM Cloud.
 
   ```
   cf push
   ```
-4. The application should now be running on Bluemix.  You can access the application URL using the application name you defined in the manifest.yml file with a `.mybluemix.net` appended to it.
+4. The application should now be running on IBM Cloud.  You can access the application URL using the application name you defined in the manifest.yml file with a `.mybluemix.net` appended to it.
 
 
 [documentation]: https://console.bluemix.net/docs/services/personality-insights/getting-started.html
