@@ -31,18 +31,23 @@ When the reader has completed this journey, they will understand how to:
 
 The setup is done in 3 primary steps.  You will download the code, setup the application and then deploy the code to Bluemix.
 
-1. [Clone the repo](#1-clone-the-repo)
-2. [Twitter Requirements](#2-twitter-requirements)
-3. [Create Watson Personality Insights service with Bluemix](#3-create-watson-personality-insights-service-with-Bluemix)
-4. [Run the application](#4-run-the-application)
+1. [Sign up on IBM Cloud](#1-sign-up-on-ibm-cloud)
+2. [Clone the repo](#2-clone-the-repo)
+3. [Twitter Requirements](#3-twitter-requirements)
+4. [Create Watson Personality Insights service with Bluemix](#4-create-watson-personality-insights-service-with-Bluemix)
+5. [Run the application](#5-run-the-application)
 
-### 1. Clone the repo
+### 1. Sign up on IBM Cloud
+
+If you do not already have a Bluemix account, [sign up for IBM Cloud](https://ibm.biz/clouddaypsu).
+
+### 2. Clone the repo
 
 Click `Clone or download` button. Then, `Download ZIP`
 
 ![Clone](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/clone.png)
 
-### 2. Twitter requirements
+### 3. Twitter requirements
 
 To get Tweets from a specific handle in this application, it is required to create a Twitter account and a Twitter application.
 The Twitter account will be used as the account that gets the tweets from other Twitter users.
@@ -60,18 +65,17 @@ var Twithelper = new Twit({
 
 ![Twitter app](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/twitter.gif)
 
-### 3. Create Watson Personality Insights service with Bluemix
+### 4. Create Watson Personality Insights service with Bluemix
 
-1. If you do not already have a Bluemix account, [sign up for Bluemix](https://ibm.biz/clouddaypsu).
-2. Download and install the [Cloud Foundry CLI](https://console.bluemix.net/docs/cli/index.html#cli) tool.
-3. Log into Bluemix with your account.
-4. Create `Personality Insights` service.
+1. Download and install the [Cloud Foundry CLI](https://console.bluemix.net/docs/cli/index.html#cli) tool.
+2. Log into Bluemix with your account.
+3. Create `Personality Insights` service.
   - From the top bar menu, click `Catalog`.
   - On the left menu, select `Watson`.
   - Select `Personality Insights`.
   - Click `Create`.
-5. Once the application is created, go into the application and select `Service credentials`.
-6. Click `View credentials` to copy your username and password into the code in `app.js`:
+4. Once the application is created, go into the application and select `Service credentials`.
+5. Click `View credentials` to copy your username and password into the code in `app.js`:
 
 ```
 var personality_insights = watson.personality_insights({
@@ -84,7 +88,7 @@ var personality_insights = watson.personality_insights({
 
 ![Watson service](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/bluemix.gif)
 
-### 4. Run the application
+### 5. Run the application
 
 1. Open the `manifest.yml` file and change the `name` AND `host` value to a unique application name.
 
