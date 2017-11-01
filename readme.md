@@ -86,7 +86,7 @@ var personality_insights = watson.personality_insights({
 });
 ```
 
-![Watson service](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/IBM Cloud.gif)
+![Watson service](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/bluemix.gif)
 
 ### 5. Run the application
 
