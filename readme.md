@@ -29,12 +29,12 @@ When the reader has completed this journey, they will understand how to:
 
 # Steps
 
-The setup is done in 3 primary steps.  You will download the code, setup the application and then deploy the code to IBM Clou.
+The setup is done in 3 primary steps.  You will download the code, setup the application and then deploy the code to IBM Cloud.
 
 1. [Sign up on IBM Cloud](#1-sign-up-on-ibm-cloud)
 2. [Clone the repo](#2-clone-the-repo)
 3. [Twitter Requirements](#3-twitter-requirements)
-4. [Create Watson Personality Insights service with IBM Clou](#4-create-watson-personality-insights-service-with-Bluemix)
+4. [Create Watson Personality Insights service with IBM Cloud](#4-create-watson-personality-insights-service-with-ibm-cloud)
 5. [Run the application](#5-run-the-application)
 
 ### 1. Sign up on IBM Cloud
@@ -95,7 +95,7 @@ var personality_insights = watson.personality_insights({
 2. Connect to IBM Cloud in the command line tool and follow the prompts to log in
 
   ```
-  cf login -a https://api.ng.IBM Cloud.net
+  cf login -a https://api.ng.bluemix.net
   ```
 3. Push the app to IBM Cloud.
 
