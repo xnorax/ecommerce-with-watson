@@ -43,9 +43,11 @@ If you do not already have a IBM Cloud account, [sign up for IBM Cloud](https://
 
 ### 2. Clone the repo
 
-Click `Clone or download` button. Then, `Download ZIP`
+1. Click `Clone or download` button. Then, `Download ZIP`.
 
 ![Clone](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/clone.png)
+
+2. Go to `.zip` folder, and click right to `Extract All`.
 
 ### 3. Twitter requirements
 
@@ -67,15 +69,14 @@ var Twithelper = new Twit({
 
 ### 4. Create Watson Personality Insights service with IBM Cloud
 
-1. Download and install the [Cloud Foundry CLI](https://console.bluemix.net/docs/cli/index.html#cli) tool.
-2. Log into IBM Cloud with your account.
-3. Create `Personality Insights` service.
+1. Log into IBM Cloud with your account.
+2. Create `Personality Insights` service.
   - From the top bar menu, click `Catalog`.
   - On the left menu, select `Watson`.
   - Select `Personality Insights`.
   - Click `Create`.
-4. Once the application is created, go into the application and select `Service credentials`.
-5. Click `View credentials` to copy your username and password into the code in `app.js`:
+3. Once the application is created, go into the application and select `Service credentials`.
+4. Click `View credentials` to copy your username and password into the code in `app.js`:
 
 ```
 var personality_insights = watson.personality_insights({
@@ -92,17 +93,39 @@ var personality_insights = watson.personality_insights({
 
 1. Open the `manifest.yml` file and change the `name` AND `host` value to a unique application name.
 
-2. Connect to IBM Cloud in the command line tool and follow the prompts to log in
+2. Download and install the [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started) tool.
+
+3. Now open `Command Prompt` app and go to the directory of `eCommerce with Watson` folder in your computer.
+
+```
+cd C:\Users\%username%\Downloads\eCommerce-with-Watson-master
+```
+
+4. Then, connect to IBM Cloud and follow the prompts to log in.
 
   ```
-  cf login -a https://api.ng.bluemix.net
+  bx login
   ```
-3. Push the app to IBM Cloud.
+5. Specify your targeted organization and space. You can find it in IBM Cloud Dashboard.
+
+![Organization and Space](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/org.PNG)
 
   ```
-  cf push
+  bx target -o nora.alnashwan -s dev
   ```
-4. The application should now be running on IBM Cloud.  You can access the application URL using the application name you defined in the manifest.yml file with a `.mybluemix.net` appended to it.
+
+6. Push the app to IBM Cloud.
+
+  ```
+  bx app push
+  ```
+
+7. The application should now be running on IBM Cloud.
+![Running](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/running.PNG)
+
+You can access the application from the route specified in your IBM Cloud Dashboard.
+
+![App](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/app.PNG)
 
 
 [documentation]: https://console.bluemix.net/docs/services/personality-insights/getting-started.html
