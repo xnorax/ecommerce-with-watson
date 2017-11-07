@@ -124,6 +124,7 @@ cd C:\Users\%username%\Downloads\eCommerce-with-Watson-master
 ![Running](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/running.PNG)
 
 Congrats! :smile: Now you can access the application from the route specified in your IBM Cloud Dashboard.
+
 ![App](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/app.PNG)
 
 
