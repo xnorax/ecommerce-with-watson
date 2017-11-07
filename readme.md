@@ -47,7 +47,7 @@ If you do not already have a IBM Cloud account, [sign up for IBM Cloud](https://
 
 ![Clone](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/clone.png)
 
-2. Go to `.zip` folder, and click right to `Extract All`.
+2. Right click on the downloaded `.zip` folder and click `Extract All`.
 
 ### 3. Twitter requirements
 
@@ -69,7 +69,7 @@ var Twithelper = new Twit({
 
 ### 4. Create Watson Personality Insights service with IBM Cloud
 
-1. Log into IBM Cloud with your account.
+1. Log into [IBM Cloud](http://bluemix.net/) with your account.
 2. Create `Personality Insights` service.
   - From the top bar menu, click `Catalog`.
   - On the left menu, select `Watson`.
@@ -122,9 +122,7 @@ cd C:\Users\%username%\Downloads\eCommerce-with-Watson-master
 
 7. The application should now be running on IBM Cloud.
 ![Running](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/running.PNG)
-
-You can access the application from the route specified in your IBM Cloud Dashboard.
-
+Congrats! :smile: Now you can access the application from the route specified in your IBM Cloud Dashboard.
 ![App](https://github.com/xnorax/eCommerce-with-Watson/blob/master/git_images/app.PNG)
 
 
