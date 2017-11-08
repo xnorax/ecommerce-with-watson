@@ -39,7 +39,7 @@ The setup is done in 3 primary steps.  You will download the code, setup the app
 
 ### 1. Sign up on IBM Cloud
 
-If you do not already have a IBM Cloud account, [sign up for IBM Cloud](https://ibm.biz/clouddayimamu).
+If you do not already have a IBM Cloud account, [sign up for IBM Cloud](https://ibm.biz/clouddayalfaisal).
 
 ### 2. Clone the repo
 
